@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 6.1vh;
+  padding-left: 11.4vw;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.marvel-bg {
+  position: absolute;
+  top: 19.5%;
+  left: 8.3%;
+  opacity: 0.5;
+  width: 700px;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+}
+.character {
+  position: absolute;
+  top: 0;
+  right: 14.5%;
+  height: 100%;
+  z-index: 2;
+  user-select: none;
+}
+.character-img {
+  position: relative;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+.character-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 82.5%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/spiderman-bg.png);
+  background-size: contain;
+  clip-path: polygon(36.5% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 1;
+}
+.tilt-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30.5%;
+  height: 100%;
+  background: #ed1d24;
+  clip-path: polygon(51.3% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 3;
+  overflow: hidden;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.5) 1px,
+      transparent 1px
+    ),
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(255, 255, 255, 0.05) 0deg 10deg,
+      transparent 10deg 20deg
+    );
+  background-size: 50px 50px, 100% 100%;
+}
+.spider-up {
+  top: 16%;
+  left: 62%;
+  rotate: 45deg;
+}
+.brandnewday {
+  top: 50%;
+  left: 65%;
+  width: 50% !important;
+  border-radius: 10px;
+}
+.spider-down {
+  bottom: 15.5%;
+  right: 54.5%;
+  rotate: -130deg;
+}
+.spider-up,
+.spider-down,
+.brandnewday {
+  width: 30%;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-5px);
+  }
+}
+
+.hero-content {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 17rem;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 28px;
+  user-select: none;
+}
+
+.breadcrumb {
+  font-size: 12.5px;
+  color: #777;
+  font-family: "Montserrat", sans-serif;
+}
+
+.breadcrumb-bold {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.breadcrumb::selection {
+  background: #333;
+  color: #fff;
+}
+
+.hero-content h1 {
+  padding-top: 2px;
+  font-size: 38px;
+  color: #e50914;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 104.6%;
+}
+
+.hero-content h1::selection {
+  background: #e50914;
+  color: #fff;
+}
+
+.hero-content p {
+  margin: 0;
+  padding: 10px 0px 0px 2px;
+  max-width: 360px;
+  font-size: 12.9px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.hero-content p::selection {
+  background: #333;
+  color: #fff;
+}
+
+.social-icons {
+  padding-top: 42px;
+  display: flex;
+  gap: 45px;
+  user-select: none;
+}
+
+.fb,
+.insta,
+.yt,
+.github,
+.linkedin {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fb {
+  width: 10px;
+  height: 18px;
+}
+
+.insta {
+  width: 17px;
+  height: 17px;
+}
+
+.yt {
+  width: 20px;
+  height: 16px;
+  padding-top: 2px;
+}
+
+.github {
+  width: 18px;
+  height: 18px;
+}
+
+.linkedin {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.fb:hover {
+  transform: scale(1.15);
+}
+
+.insta:hover,
+.yt:hover,
+.github:hover,
+.linkedin:hover {
+  transform: scale(1.1);
+}
