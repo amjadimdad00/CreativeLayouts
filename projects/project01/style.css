@@ -38,6 +38,11 @@ body {
   z-index: 2;
   user-select: none;
 }
+.character-wrapper {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
 .character-img {
   position: relative;
   height: 100%;
@@ -114,37 +119,31 @@ body {
     transform: translate(-50%, -50%) translateY(-5px);
   }
 }
-
 .hero-content {
   max-width: 380px;
   display: flex;
   flex-direction: column;
   gap: 17rem;
 }
-
 .logo {
   width: 120px;
   margin-bottom: 28px;
   user-select: none;
 }
-
 .breadcrumb {
   font-size: 12.5px;
   color: #777;
   font-family: "Montserrat", sans-serif;
 }
-
 .breadcrumb-bold {
   font-weight: 700;
   text-transform: uppercase;
   color: #000;
 }
-
 .breadcrumb::selection {
   background: #333;
   color: #fff;
 }
-
 .hero-content h1 {
   padding-top: 2px;
   font-size: 38px;
@@ -153,12 +152,10 @@ body {
   font-weight: 800;
   line-height: 104.6%;
 }
-
 .hero-content h1::selection {
   background: #e50914;
   color: #fff;
 }
-
 .hero-content p {
   margin: 0;
   padding: 10px 0px 0px 2px;
@@ -168,19 +165,17 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-
 .hero-content p::selection {
   background: #333;
   color: #fff;
 }
-
 .social-icons {
   padding-top: 42px;
   display: flex;
   gap: 45px;
+  align-items: center;
   user-select: none;
 }
-
 .fb,
 .insta,
 .yt,
@@ -189,41 +184,328 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .fb {
   width: 10px;
   height: 18px;
 }
-
 .insta {
   width: 17px;
   height: 17px;
 }
-
 .yt {
   width: 20px;
   height: 16px;
   padding-top: 2px;
 }
-
 .github {
   width: 18px;
   height: 18px;
 }
-
 .linkedin {
   width: 18px;
   height: 18px;
   border-radius: 3px;
 }
-
 .fb:hover {
   transform: scale(1.15);
 }
-
 .insta:hover,
 .yt:hover,
 .github:hover,
 .linkedin:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .character,
+  .character-wrapper,
+  .character-img,
+  .character-bg,
+  .tilt-bg,
+  .spider-up,
+  .brandnewday,
+  .spider-down {
+    display: none;
+  }
+  .marvel-bg {
+    top: 19%;
+    left: 6.5%;
+    width: 400px;
+  }
+  .hero {
+    padding-left: 5.5vw;
+  }
+  .hero-content {
+    gap: 14rem;
+  }
+  .logo {
+    width: 100px;
+  }
+  .breadcrumb {
+    font-size: 10px;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content p {
+    padding: 8px 0px 0px 2px;
+    max-width: 310px;
+    font-size: 10px;
+  }
+  .social-icons {
+    padding-top: 36px;
+    gap: 40px;
+  }
+  .fb {
+    width: 7px;
+    height: 14px;
+  }
+  .insta {
+    width: 13px;
+    height: 13px;
+  }
+  .yt {
+    width: 14px;
+    height: 12px;
+  }
+  .github {
+    width: 14px;
+    height: 14px;
+  }
+  .linkedin {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .character,
+  .character-wrapper,
+  .character-img,
+  .character-bg,
+  .tilt-bg,
+  .spider-up,
+  .brandnewday,
+  .spider-down {
+    display: block;
+  }
+  .marvel-bg {
+    left: 2%;
+    width: 600px;
+  }
+  .character-wrapper {
+    transform: translate(55px);
+  }
+  .character-bg {
+    right: -10%;
+    width: 83.5%;
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .tilt-bg {
+    width: 27.5%;
+    clip-path: polygon(66% 0, 100% 0, 100% 100%, 0 100%);
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.5) 2px,
+        transparent 2px
+      ),
+      repeating-conic-gradient(
+        from 0deg,
+        rgba(255, 255, 255, 0.05) 0deg 10deg,
+        transparent 10deg 20deg
+      );
+  }
+  .hero {
+    padding-left: 5.5vw;
+  }
+  .hero-content {
+    gap: 14.2rem;
+  }
+  .logo {
+    width: 105px;
+  }
+  .breadcrumb {
+    font-size: 11px;
+  }
+  .hero-content h1 {
+    font-size: 33px;
+  }
+  .hero-content p {
+    padding: 8px 0px 0px 2px;
+    max-width: 310px;
+    font-size: 11px;
+  }
+  .social-icons {
+    padding-top: 36px;
+    gap: 40px;
+  }
+  .fb {
+    width: 9px;
+    height: 16px;
+  }
+  .insta {
+    width: 15px;
+    height: 15px;
+  }
+  .yt {
+    width: 18px;
+    height: 16px;
+  }
+  .github {
+    width: 16px;
+    height: 16px;
+  }
+  .linkedin {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .marvel-bg {
+    left: 3.5%;
+  }
+  .character-wrapper {
+    transform: translate(45px);
+  }
+  .character-bg {
+    right: -6%;
+    width: 82%;
+    clip-path: polygon(36.5% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .tilt-bg {
+    width: 28.5%;
+    clip-path: polygon(61% 0, 100% 0, 100% 100%, 0 100%);
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.5) 2px,
+        transparent 2px
+      ),
+      repeating-conic-gradient(
+        from 0deg,
+        rgba(255, 255, 255, 0.05) 0deg 10deg,
+        transparent 10deg 20deg
+      );
+  }
+  .hero {
+    padding-left: 7.1vw;
+  }
+  .hero-content {
+    gap: 16.5rem;
+  }
+  .logo {
+    width: 120px;
+  }
+  .breadcrumb {
+    font-size: 12.5px;
+  }
+  .hero-content h1 {
+    font-size: 37px;
+  }
+  .hero-content p {
+    padding: 10px 0px 0px 2px;
+    max-width: 350px;
+    font-size: 12.5px;
+  }
+  .social-icons {
+    padding-top: 48px;
+    gap: 44px;
+  }
+  .fb {
+    width: 10px;
+    height: 20px;
+  }
+  .insta {
+    width: 18px;
+    height: 18px;
+  }
+  .yt {
+    width: 20px;
+    height: 16px;
+  }
+  .github {
+    width: 18px;
+    height: 18px;
+  }
+  .linkedin {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .marvel-bg {
+    left: 3.5%;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .character-wrapper {
+    transform: translate(150px);
+  }
+  .character-bg {
+    right: -10%;
+    width: 83%;
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .tilt-bg {
+    width: 27%;
+    clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.5) 2px,
+        transparent 2px
+      ),
+      repeating-conic-gradient(
+        from 0deg,
+        rgba(255, 255, 255, 0.05) 0deg 10deg,
+        transparent 10deg 20deg
+      );
+  }
+  .hero {
+    padding-left: 5.1vw;
+  }
+  .hero-content {
+    max-width: 1000px;
+    gap: 40rem;
+  }
+  .logo {
+    width: 260px;
+  }
+  .breadcrumb {
+    font-size: 27px;
+  }
+  .hero-content h1 {
+    font-size: 82px;
+  }
+  .hero-content p {
+    padding: 24px 0px 0px 2px;
+    max-width: 800px;
+    font-size: 28px;
+  }
+  .social-icons {
+    padding-top: 100px;
+    gap: 100px;
+  }
+  .fb {
+    width: 20px;
+    height: 36px;
+  }
+  .insta {
+    width: 40px;
+    height: 40px;
+  }
+  .yt {
+    width: 42px;
+    height: 36px;
+  }
+  .github {
+    width: 40px;
+    height: 40px;
+  }
+  .linkedin {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+  }
 }
