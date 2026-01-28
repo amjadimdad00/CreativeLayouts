@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="amjad, amjadimdad, amjad imdad, amjadimdad00, mern, developer, javascript, frontend, UI/UX, ui, nike, air jordan, sneakers, shoes"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Air Jordan | Nike Store</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="/assets/nike.png" alt="Nike Logo" />
+
+      <ul class="nav-links">
+        <li><a href="#">men</a></li>
+        <li><a href="#">women</a></li>
+        <li><a href="#">kids</a></li>
+        <li><a href="#">accessories</a></li>
+        <li><a href="#">sale</a></li>
+      </ul>
+
+      <button class="btn">Menu</button>
+    </nav>
+
+    <main class="container">
+      <div class="left">
+        <div>
+          <h1>Air Jordan</h1>
+          <h1>Legacy 312 Low</h1>
+        </div>
+        <p>
+          Iconic style references like midstrap and elephant print are present
+          from the days when MJ wore these designs and were stored in Chicago's
+          312 area code. Superior quality leather and Nike Air cushioning heraid
+          the beginning of a new legend
+        </p>
+        <div class="btns">
+          <button class="btn1">US 8.5</button>
+          <button class="btn2">Add To Cart</button>
+        </div>
+      </div>
+      <div class="right">
+        <span class="nike-text">NIKE</span>
+
+        <div class="shoe-wrapper">
+          <img src="/assets/shoes.png" alt="Nike Shoe" />
+          <div class="shadow"></div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const menuBtn = document.querySelector(".nav .btn");
+      const nav = document.querySelector(".nav");
+
+      menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

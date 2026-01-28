@@ -1,9 +1,16 @@
 [
   {
     "title": "Spiderman Layout Design",
-    "description": "A visually striking Spider-Man hero section inspired by the Marvel Universe. Built using pure HTML and CSS, this layout focuses on layered backgrounds, clip-path shapes, and smooth floating animations to create depth and impact. Designed with clean structure and modern UI aesthetics, making it ideal for portfolios and creative frontend showcases.",
+    "description": "A visually striking Spider-Man landing page inspired by the Marvel Universe. Built using pure HTML and CSS, this layout focuses on layered backgrounds, clip-path shapes, and smooth floating animations to create depth and impact. Designed with clean structure and modern UI aesthetics, making it ideal for portfolios and creative frontend showcases.",
     "tech": ["html", "css"],
     "github": "https://github.com/amjadimdad00/CreativeLayouts/tree/main/projects/project01",
     "livedemo": "https://spiderman-marvel-universe.vercel.app/"
+  },
+  {
+    "title": "Air Jordan Landing Design",
+    "description": "A visually striking Air Jordan landing page inspired by the iconic sneaker brand. Built using pure HTML and CSS, this layout focuses on layered backgrounds, clip-path shapes, and smooth floating animations to create depth and impact. Designed with clean structure and modern UI aesthetics, making it ideal for portfolios and creative frontend showcases.",
+    "tech": ["html", "css"],
+    "github": "https://github.com/amjadimdad00/CreativeLayouts/tree/main/projects/project02",
+    "livedemo": "https://air-jordan-amjadimdad00.vercel.app/"
   }
 ]

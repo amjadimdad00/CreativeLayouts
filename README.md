@@ -65,6 +65,7 @@ cd CreativeLayouts
 Here’s a small preview of the projects in this repo:
 
 ![Project01](projects/project01/preview.png)
+![Project02](projects/project02/preview.png)
 
 ---
 
